@@ -1,92 +1,130 @@
 <template>
-  <div class="container">
-    <headerSection/>
+    <div class="container">
+        <headerSection/>
 
-    <div class="content">
-      <h2 class="lead">My name is Matthias Koch, I am 23 years old and currently studying interaction design at the
-        School for Design Zürich. Next to my study I work as an interaction designer to help building better digital
-        products.</h2>
-      <hr>
+        <div class="content">
+            <h2 class="lead">My name is Matthias Koch, I am 23 years old and currently studying interaction design at
+                the
+                School for Design Zürich. Next to my study I work as an interaction designer to help building better
+                digital
+                products.</h2>
+            <hr>
 
 
-      <Section title="Experience">
-        <p class="what"><strong>Interaction Design & Photography </strong>&nbsp@ internezzo ag (2017 - 2019)</p>
-        <p class="what"><strong>Event Management Internship & Photography </strong>&nbsp@ Küssenberger & Partner (2016 -
-          2017)</p>
-      </Section>
+            <Section title="Experience">
+                <p class="what"><strong>Interaction Design & Photography </strong><br>@ internezzo ag (2017 - 2019)</p>
 
-      <hr>
+                <p class="what"><strong>Event Management Internship & Photography</strong>
+                    <br>@ Küssenberger & Partner (2016 - 2017)</p>
 
-      <Section title="Education">
-        <p class="what"><strong>Interaction Design & Photography </strong>&nbsp@ internezzo ag (2017 - 2019)</p>
-        <p class="what"><strong>Event Management Internship & Photography </strong>&nbsp@ Küssenberger & Partner (2016 -
-          2017)</p>
-      </Section>
+                <p class="what"><strong>Fotofachmann EFZ</strong>
+                    <br>@ Foto Studio Kasino ag (2012 - 2015)</p>
+            </Section>
 
-      <hr>
+            <hr>
 
-      <Section title="Skills">
-        <h3>Software</h3>
-        <p>Design: Sketch, Figma, Adobe XD, Protopie, Adobe Photoshop, Illustrator, InDesign, Premiere Pro, After Effects</p>
-        <p>Code: Basic HTML, CSS and Javascript</p>
-        <p>Tools I like: Jira, Confluence, Slack, Bear</p>
-      </Section>
+            <Section title="Education">
+                <p class="what"><strong>HF Interaction Design</strong>
+                    <br>@ Schule für Gestaltung Zürich (2017 - 2020)</p>
 
-      <hr>
+                <p class="what"><strong>Cambridge First Certificate</strong>
+                    <br>@ Selc Syndey, Australia (2015 - 2016)</p>
 
-      <Section title="Languages">
-        <p>Swiss German: Native</p>
-        <p>German: Fluent</p>
-        <p>English: Fluent</p>
-      </Section>
+                <p class="what"><strong>Fotofachmann EFZ</strong>
+                    <br>@ Medien Form & Farbe (2012 - 2015)</p>
+            </Section>
+
+            <hr>
+
+            <Section title="Skills">
+                <p><strong>Design:</strong><br> Sketch, Figma, Adobe XD, Protopie, Adobe Photoshop, Illustrator,
+                    InDesign, Premiere Pro,
+                    After Effects</p>
+                <p><strong>Code:</strong><br> Basic HTML, CSS and Javascript</p>
+                <p><strong>Tools I like:</strong><br> Jira, Confluence, Slack, Bear</p>
+            </Section>
+
+            <hr>
+
+            <Section title="Languages">
+                <p>Swiss German: Native</p>
+                <p>German: Fluent</p>
+                <p>English: Fluent</p>
+            </Section>
+
+            <hr>
+
+            <h2 class="contact">Matthias Koch // <a href="mailto:hello@matthiasko.ch">hello@matthiasko.ch</a> </h2>
+        </div>
     </div>
-  </div>
 
 </template>
 
 <script>
 
-  import headerSection from "../components/headerSection";
+    import headerSection from "../components/headerSection";
 
-  import experience from "../components/experience";
+    import experience from "../components/experience";
 
-  import Section from "../components/Section";
+    import Section from "../components/Section";
 
-  import Skill from "../components/Skill";
-
-
-  export default {
-    components: {
-      headerSection,
-      experience,
-      Section,
-      Skill
+    import Skill from "../components/Skill";
+    export default {
+        components: {
+            headerSection,
+            experience,
+            Section,
+            Skill
+        }
     }
-  }
 
 </script>
 
 <style>
-  @import url('https://fonts.googleapis.com/css?family=Catamaran:300,500,700&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Catamaran:300,500,700&display=swap');
 
-  .lead {
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 300;
-    font-size: 1.625rem;
-    margin: auto;
-    padding-top: 100px;
-  }
+    .lead {
+        font-family: 'Catamaran', sans-serif;
+        font-weight: 300;
+        font-size: 1.625rem;
+        margin: auto;
+        padding-top: 100px;
+    }
 
-  .content {
-    max-width: 56.875rem;
-    margin: 0 auto;
-    padding: 15px;
-  }
+    .content {
+        max-width: 56.875rem;
+        margin: 0 auto;
+        padding: 15px;
+    }
 
-  hr {
-    margin: auto;
-    margin-top: 6.25rem;
-    margin-bottom: 1.5rem;
-  }
+    hr {
+        margin: auto;
+        margin-top: 6.25rem;
+        margin-bottom: 3.125rem;
+        border: 1x solid #CCCCCC;
+    }
 
+    p {
+        font-family: 'Catamaran', sans-serif;
+        font-size: 1.125rem;
+        line-height: 1.575rem;
+        padding-bottom: 1.5rem;
+    }
+
+    h3 {
+        font-family: 'Catamaran', sans-serif;
+        font-size: 1.325rem;
+    }
+
+    h2 {
+        font-family: 'Catamaran', sans-serif;
+        font-size: 1.825rem;
+    }
+
+    .contact{
+        font-family: 'Catamaran', sans-serif;
+        font-weight: 300;
+        font-size: 1.125rem;
+        margin-bottom: 3.125rem;
+    }
 </style>
