@@ -25,7 +25,7 @@
         width: 100vw;
         height: 100vh;
         background-color: #0E0E0E;
-        }
+    }
 
     .nav {
         display: flex;
@@ -66,11 +66,11 @@
         margin: 0 auto;
         height: 50%;
         position: relative;
-        padding: 0
+        padding-top: 40%;
     }
 
     .hscroll-line {
-        bottom: 20%;
+        bottom: 50%;
         right: 50%;
         height: 2px;
         position: absolute;
@@ -112,7 +112,6 @@
         }
     }
 
-
     @media (max-width: 667px) {
         .name {
             font-size: 0.9rem;
@@ -122,13 +121,13 @@
             font-size: 0.9rem
         }
 
-        .title{
+        .title {
             font-size: 3rem;
-            padding-top: 40%;
+            padding-top: 45%;
         }
 
-        .hscroll-line{
-            bottom: 50%;
+        .section {
+            padding-top: 30%;
         }
     }
 
