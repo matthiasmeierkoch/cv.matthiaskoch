@@ -127,4 +127,8 @@
         font-size: 1.125rem;
         margin-bottom: 3.125rem;
     }
+
+    html{
+        overflow-x: hidden;
+    }
 </style>

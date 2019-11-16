@@ -1,6 +1,5 @@
 <template>
     <div class="headerSection">
-
         <div class="nav">
             <h2 class="name">Matthias Koch</h2>
             <h2 class="path"> / Crriculum Vitae</h2>
@@ -26,7 +25,7 @@
         width: 100vw;
         height: 100vh;
         background-color: #0E0E0E;
-    }
+        }
 
     .nav {
         display: flex;
@@ -37,7 +36,7 @@
         padding-left: 2rem;
         color: #ffffff;
         font-family: 'Montserrat', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: 300;
     }
 
@@ -46,7 +45,7 @@
         margin-left: 0.5rem;
         color: #ffffff;
         font-family: 'Montserrat', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: 700;
     }
 
@@ -58,10 +57,15 @@
         .path {
             font-size: 0.9rem
         }
+
+        .title{
+            font-size: 2rem;
+
+        }
     }
 
     .title {
-        width: 500px;
+        width: 100%;
         padding-top: 35vh;
         margin: auto;
         text-align: center;
@@ -75,13 +79,13 @@
     .section {
         width: 80%;
         margin: 0 auto;
-        height: 400px;
+        height: 50%;
         position: relative;
         padding: 0
     }
 
     .hscroll-line {
-        bottom: 50px;
+        bottom: 20%;
         right: 50%;
         height: 2px;
         position: absolute;
