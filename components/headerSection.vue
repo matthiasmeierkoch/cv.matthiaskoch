@@ -60,6 +60,7 @@
 
         .title{
             font-size: 2rem;
+            padding-top: 40%;
         }
 
         .hscroll-line{
