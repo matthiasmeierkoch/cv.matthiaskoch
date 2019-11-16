@@ -49,25 +49,6 @@
         font-weight: 700;
     }
 
-    @media (max-width: 667px) {
-        .name {
-            font-size: 0.9rem;
-        }
-
-        .path {
-            font-size: 0.9rem
-        }
-
-        .title{
-            font-size: 2rem;
-            padding-top: 40%;
-        }
-
-        .hscroll-line{
-            bottom: 40%;
-        }
-    }
-
     .title {
         width: 100%;
         padding-top: 35vh;
@@ -130,5 +111,26 @@
             transform: translate3d(100%, 0, 0)
         }
     }
+
+
+    @media (max-width: 667px) {
+        .name {
+            font-size: 0.9rem;
+        }
+
+        .path {
+            font-size: 0.9rem
+        }
+
+        .title{
+            font-size: 3rem;
+            padding-top: 40%;
+        }
+
+        .hscroll-line{
+            bottom: 50%;
+        }
+    }
+
 
 </style>
