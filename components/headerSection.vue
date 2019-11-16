@@ -60,7 +60,10 @@
 
         .title{
             font-size: 2rem;
+        }
 
+        .hscroll-line{
+            bottom: 40%;
         }
     }
 
