@@ -64,15 +64,15 @@
     .section {
         width: 80%;
         margin: 0 auto;
-        height: 50%;
+        height: 400px;
         position: relative;
-        padding-top: 40%;
+        padding: 0
     }
 
     .hscroll-line {
-        bottom: 50%;
+        bottom: 30px;
         right: 50%;
-        height: 2px;
+        height: 1px;
         position: absolute;
         overflow: hidden;
         width: 60px;
@@ -84,7 +84,7 @@
     .hscroll-line::before,
     .hscroll-line::after {
         position: absolute;
-        top: -50px;
+        top: 0;
         left: 0;
         right: 0;
         bottom: 0;
@@ -96,7 +96,7 @@
     }
 
     .hscroll-line::after {
-        background: #FFBA2E;
+        background: -webkit-linear-gradient(45deg, #E859FF, #FFBA2E);
         animation: move 3s infinite
     }
 
