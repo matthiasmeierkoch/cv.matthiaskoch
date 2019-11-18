@@ -64,8 +64,6 @@
 
     import headerSection from "../components/headerSection";
 
-    import experience from "../components/experience";
-
     import Section from "../components/Section";
 
     import Skill from "../components/Skill";
