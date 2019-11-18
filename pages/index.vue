@@ -1,8 +1,10 @@
 <template>
     <div class="container">
-        <headerSection/>
+        <section class="panel header">
+            <headerSection/>
+        </section>
 
-        <div class="background">
+        <section class="panel inhalt">
             <div class="content">
                 <h2 class="lead">My name is Matthias Koch, I am 23 years old and currently studying interaction design
                     at
@@ -59,7 +61,7 @@
 
                 <h2 class="contact">Matthias Koch // <a href="mailto:hello@matthiasko.ch">hello@matthiasko.ch</a></h2>
             </div>
-        </div>
+        </section>
     </div>
 
 </template>
@@ -80,17 +82,17 @@
 </script>
 
 <style>
-    @import url('https://fonts.googleapis.com/css?family=Catamaran:300,500,700&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700&display=swap');
 
     .lead {
-        font-family: 'Catamaran', sans-serif;
+        font-family: 'Nunito Sans', sans-serif;
         font-weight: 300;
         font-size: 1.625rem;
         margin: auto;
         padding-top: 100px;
     }
 
-    .background{
+    .background {
         background-color: white;
         z-index: 1;
     }
@@ -109,24 +111,24 @@
     }
 
     p {
-        font-family: 'Catamaran', sans-serif;
+        font-family: 'Nunito Sans', sans-serif;
         font-size: 1.125rem;
         line-height: 1.575rem;
         padding-bottom: 1.5rem;
     }
 
     h3 {
-        font-family: 'Catamaran', sans-serif;
+        font-family: 'Nunito Sans', sans-serif;
         font-size: 1.325rem;
     }
 
     h2 {
-        font-family: 'Catamaran', sans-serif;
+        font-family: 'Nunito Sans', sans-serif;
         font-size: 1.825rem;
     }
 
     .contact {
-        font-family: 'Catamaran', sans-serif;
+        font-family: 'Nunito Sans', sans-serif;
         font-weight: 300;
         font-size: 1.125rem;
         margin-bottom: 3.125rem;

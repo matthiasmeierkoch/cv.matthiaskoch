@@ -26,7 +26,7 @@
     }
 
     .Section__content {
-        width: 70%;
+        width: 65%;
         margin-top: 3.665rem;
 
     }
