@@ -1,17 +1,15 @@
 <template>
     <div class="container">
-        <section class="panel header">
+
+        <section class="sectionHeader">
             <headerSection/>
         </section>
 
-        <section class="panel inhalt">
+        <section class="sectionContent">
             <div class="content">
                 <h2 class="lead">My name is Matthias Koch, I am 23 years old and currently studying interaction design
-                    at
-                    the
-                    School for Design Zürich. Next to my study I work as an interaction designer to help building better
-                    digital
-                    products.</h2>
+                    at the School for Design Zürich. Next to my study I work as an interaction designer to help
+                    building better digital products.</h2>
                 <hr>
 
 
@@ -62,6 +60,7 @@
                 <h2 class="contact">Matthias Koch // <a href="mailto:hello@matthiasko.ch">hello@matthiasko.ch</a></h2>
             </div>
         </section>
+
     </div>
 
 </template>
@@ -92,10 +91,16 @@
         padding-top: 100px;
     }
 
-    .background {
-        background-color: white;
-        z-index: 1;
+    .sectionHeader{
+        position: fixed;
+        top: 0;
     }
+
+    .sectionContent{
+        position: relative;
+        background: white;
+        margin-top: 100vh;
+        }
 
     .content {
         max-width: 56.875rem;

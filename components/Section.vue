@@ -1,8 +1,10 @@
 <template>
-    <div class="Section">
-        <h2 class="Section__title">{{ title }}</h2>
-        <div class="Section__content">
-            <slot></slot>
+    <div class="content">
+        <div class="Section">
+            <h2 class="Section__title">{{ title }}</h2>
+            <div class="Section__content">
+                <slot></slot>
+            </div>
         </div>
     </div>
 </template>
@@ -14,6 +16,7 @@
 </script>
 
 <style>
+
     .Section {
         position: relative;
         justify-content: space-between;
