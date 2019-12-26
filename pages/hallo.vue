@@ -2,7 +2,7 @@
     <div>
         <h1>hallo</h1>
         <nuxt-link to="/">Home</nuxt-link>
-        <nuxt-link to="/random/template">template</nuxt-link>
+        <nuxt-link to="/Work/overview">work</nuxt-link>
     </div>
 </template>
 

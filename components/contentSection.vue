@@ -1,7 +1,7 @@
 <template>
 
         <div class="sectionContent">
-            <h2 class="lead" data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" data-sal-easing="ease-out-bounce">Thank you for showing interest in my CV, if you have any Questions, inquiries or would like
+            <h2 class="lead" data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" data-sal-easing="ease-out">Thank you for showing interest in my CV, if you have any Questions, inquiries or would like
                 to meet up for a Coffee please do not hesitate to Contact me.
                 Cheers, Matthias!</h2>
             <hr>

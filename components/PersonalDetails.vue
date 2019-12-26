@@ -1,37 +1,46 @@
 <template>
     <div class="content">
-        <div class="Section">
+        <div class="Section_Personal">
+            <h2 class="Personal__title" data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000"
+                data-sal-easing="ease-out">
+                {{ title }}</h2>
             <div>
-                <img class="portrait" src="../assets/matthiaskoch.jpg">
+                <img class="portrait" data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000"
+                     data-sal-easing="ease-out"
+                     src="../assets/matthiaskoch.jpg">
             </div>
 
-            <h2 class="Personal__title">{{ title }}</h2>
-            <div class="Personal__subtitle">
-                <h3>Name:</h3>
-                <h3>Mail:</h3>
-                <h3>Residence:</h3>
-                <h3>Date of birth:</h3>
-                <h3>Nationality:</h3>
-                <h3>Hobbys:</h3>
-            </div>
+                <div class="Personal__subtitle" data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000"
+                     data-sal-easing="ease-out">
+                    <h3>Name:</h3>
+                    <h3>Mail:</h3>
+                    <h3>Residence:</h3>
+                    <h3>Date of birth:</h3>
+                    <h3>Nationality:</h3>
+                    <h3>Hobbys:</h3>
+                </div>
 
-            <div class="Personal__content info">
-                <p>Matthias Koch</p>
-                <p><a href="mailto:hello@matthiasko.ch">hello@matthiasko.ch</a></p>
-                <p>Zug, Switzerland</p>
-                <p>23.04.1996</p>
-                <p>Swiss</p>
-                <p>⛷🧗🏽‍♂️🏋🏽🗺📷</p>
-            </div>
-
+                <div class="Personal__content info" data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000"
+                     data-sal-easing="ease-out" >
+                    <p>Matthias Koch</p>
+                    <p><a href="mailto:hello@matthiasko.ch">hello@matthiasko.ch</a></p>
+                    <p>Zug, Switzerland</p>
+                    <p>23.04.1996</p>
+                    <p>Swiss</p>
+                    <p>⛷ 🧗🏽‍♂ ️🏋🏽 🗺 📷</p>
+                </div>
         </div>
     </div>
 </template>
 
 <script>
+    import sal from 'sal.js';
 
     export default {
-        props: ['title']
+        props: ['title'],
+        mounted() {
+            this.$nextTick(() => sal());
+        }
     }
 </script>
 
@@ -39,8 +48,7 @@
     @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
     @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 
-
-    .Section {
+    .Section_Personal {
         position: relative;
         justify-content: space-between;
         display: flex;
@@ -57,11 +65,14 @@
 
     }
 
-    .Personal__subtitle {
+    .Personal__subtitle h3 {
         font-family: 'Nunito', sans-serif;
         font-weight: 700;
         font-size: 1.125rem;
         line-height: 1.575rem;
+    }
+
+    .Personal__subtitle {
         width: 40%;
         margin-top: 7.5rem;
     }
@@ -81,7 +92,7 @@
         padding-bottom: 0.76rem;
     }
 
-    .Personal__subtitle h3{
+    .Personal__subtitle h3 {
         padding-bottom: 0.75rem;
     }
 
@@ -89,7 +100,7 @@
         margin-top: -4rem;
     }
 
-    .portrait{
+    .portrait {
         position: absolute;
         margin-top: 4.5rem;
         right: 2rem;
@@ -98,32 +109,31 @@
 
     @media (max-width: 667px) {
 
-        .Section {
-            display: contents;
-        }
-
         .Personal__title {
             width: 100%;
-            margin-top: -37.25rem;
+            margin-top: 1rem;
+            font-size: 4.5rem;
             position: absolute;
+            line-height: 4rem;
         }
 
-        .Personal__subtitle{
+        .Personal__subtitle h3 {
+
+        }
+
+        .Personal__subtitle {
             width: 100%;
-            margin-top: 3rem;
-            position: relative;
+            margin-top: 40rem;
         }
 
         .Personal__content {
-            width: 100%;
-            margin-top: 3rem;
-            position: relative;
-
+            width: 45%;
+            margin-top: 40rem;
         }
 
-        .portrait{
-            position: relative;
-            margin-top: 10.6rem;
+        .portrait {
+            position: absolute;
+            margin-top: 10rem;
             width: 100%;
             right: 0;
         }

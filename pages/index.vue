@@ -35,17 +35,22 @@
 
     .contentSection {
         z-index: 1;
-        margin-right: 2rem;
-        margin-left: 2rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+        margin-top: 100vh;
+        background-color: white;
     }
 
     .sectionHeader {
         top: 0;
+        position: fixed;
         z-index: -1;
 
     }
 
     html {
         overflow-x: hidden;
+        background-color: white;
     }
 </style>

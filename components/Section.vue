@@ -1,7 +1,9 @@
 <template>
-    <div class="content" data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" data-sal-easing="ease-out-bounce">
+    <div class="content" data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000"
+         data-sal-easing="ease-out-bounce">
         <div class="Section">
-            <h2 class="Section__title" data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" data-sal-easing="ease-out-bounce">{{ title }}</h2>
+            <h2 class="Section__title" data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000"
+                data-sal-easing="ease-out-bounce">{{ title }}</h2>
             <div class="Section__content">
                 <slot></slot>
             </div>
@@ -14,7 +16,7 @@
 
     export default {
         props: ['title'],
-        mounted () {
+        mounted() {
             this.$nextTick(() => sal());
         }
     }
@@ -32,10 +34,10 @@
     .Section__title {
         width: 30%;
         padding-top: 0.25rem;
-            font-size: 5rem;
+        font-size: 5rem;
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        color: RGBA(49,79,64,0.15);
+        color: RGBA(49, 79, 64, 0.15);
 
     }
 
@@ -45,7 +47,7 @@
 
     }
 
-    .content{
+    .content {
         margin-top: -3.5rem;
     }
 
@@ -57,6 +59,9 @@
 
         .Section__title {
             width: 100%;
+            font-size: 4.5rem;
+            margin-top: 4rem;
+
         }
 
         .Section__content {
