@@ -1,65 +1,63 @@
 <template>
 
-        <div class="sectionContent">
-            <h2 class="lead" data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" data-sal-easing="ease-out">Thank you for showing interest in my CV, if you have any Questions, inquiries or would like
-                to meet up for a Coffee please do not hesitate to Contact me.
-                Cheers, Matthias!</h2>
-            <hr>
-            <PersonalDetails title="Personal Details">
-            </PersonalDetails>
+    <div class="sectionContent">
+        <h2 class="lead" data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" data-sal-easing="ease-out">
+            Thank you for showing interest in my CV, if you have any Questions, inquiries or would like
+            to meet up for a Coffee please do not hesitate to Contact me.
+            Cheers, Matthias!</h2>
+        <hr>
+        <PersonalDetails title="personal details">
+        </PersonalDetails>
 
-            <hr>
+        <hr>
 
-            <Section title="Experience">
-                <p class="what"><strong>Interaction Designer</strong><br>@ Swisscom ag (2019 - now)
-                </p>
+        <Section title="experience">
+            <p class="what"><strong>Interaction Designer</strong><br>@ Swisscom ag (2019 - now)
+            </p>
 
-                <p class="what"><strong>Interaction Design & Photography </strong><br>@ internezzo ag (2017 - 2019)
-                </p>
+            <p class="what"><strong>Interaction Design & Photography </strong><br>@ internezzo ag (2017 - 2019)
+            </p>
 
-                <p class="what"><strong>Event Management Internship & Photography</strong>
-                    <br>@ Küssenberger & Partner (2016 - 2017)</p>
+            <p class="what"><strong>Event Management Internship & Photography</strong>
+                <br>@ Küssenberger & Partner (2016 - 2017)</p>
 
-                <p class="what"><strong>Fotofachmann EFZ</strong>
-                    <br>@ Foto Studio Kasino ag (2012 - 2015)</p>
-            </Section>
+            <p class="what"><strong>Fotofachmann EFZ</strong>
+                <br>@ Foto Studio Kasino ag (2012 - 2015)</p>
+        </Section>
 
-            <hr>
+        <hr>
 
-            <Section title="Education">
-                <p class="what"><strong>HF Interaction Design</strong>
-                    <br>@ Schule für Gestaltung Zürich (2017 - 2020)</p>
+        <Section title="education">
+            <p class="what"><strong>HF Interaction Design</strong>
+                <br>@ Schule für Gestaltung Zürich (2017 - 2020)</p>
 
-                <p class="what"><strong>Cambridge First Certificate</strong>
-                    <br>@ Selc Syndey, Australia (2015 - 2016)</p>
+            <p class="what"><strong>Cambridge First Certificate</strong>
+                <br>@ Selc Syndey, Australia (2015 - 2016)</p>
 
-                <p class="what"><strong>Fotofachmann EFZ</strong>
-                    <br>@ Medien Form & Farbe (2012 - 2015)</p>
-            </Section>
+            <p class="what"><strong>Fotofachmann EFZ</strong>
+                <br>@ Medien Form & Farbe (2012 - 2015)</p>
+        </Section>
 
-            <hr>
+        <hr>
 
-            <Section title="Skills">
-                <p><strong>Design:</strong><br> Sketch, Figma, Adobe XD, Protopie, Adobe Photoshop, Illustrator,
-                    InDesign, Premiere Pro,
-                    After Effects</p>
-                <p><strong>Code:</strong><br> Basic HTML, CSS and Javascript</p>
-                <p><strong>Tools I like:</strong><br> Jira, Confluence, Slack, Bear</p>
-            </Section>
+        <Section title="competences">
+            <p><strong>Design:</strong><br> Sketch, Figma, Adobe XD, Protopie, Adobe Photoshop, Illustrator,
+                InDesign, Premiere Pro,
+                After Effects</p>
+            <p><strong>Code:</strong><br> Basic HTML, CSS and Javascript</p>
+            <p><strong>Tools I like:</strong><br> Jira, Confluence, Slack, Bear</p>
+        </Section>
 
-            <hr>
+        <hr>
 
-            <Section title="Languages">
-                <p>Swiss German: Native</p>
-                <p>German: Fluent</p>
-                <p>English: Fluent</p>
-            </Section>
+        <Section title="languages">
+            <p>Swiss German: Native</p>
+            <p>German: Fluent</p>
+            <p>English: Fluent</p>
+        </Section>
 
-            <hr>
-
-            <h2 class="contact">Matthias Koch // <a href="mailto:hello@matthiasko.ch">hello@matthiasko.ch</a></h2>
-        </div>
-
+        <weekday></weekday>
+    </div>
 
 
 </template>
@@ -68,15 +66,18 @@
 <script>
 
     import Section from "../components/Section";
+    import weekday from "../components/weekday";
     import sal from 'sal.js';
     import PersonalDetails from "../components/PersonalDetails";
 
     export default {
         components: {
             Section,
-            PersonalDetails
+            PersonalDetails,
+            weekday
         },
-        mounted () {
+
+        mounted() {
             this.$nextTick(() => sal());
         }
     }
@@ -106,7 +107,7 @@
         margin: auto;
         margin-top: 6.25rem;
         margin-bottom: 3.125rem;
-        border: 1x solid #CCCCCC;
+        border: 1px solid RGBA(49, 79, 64, 0.15);
     }
 
     p {
@@ -115,7 +116,6 @@
         line-height: 1.575rem;
         padding-bottom: 1.5rem;
     }
-
 
     h3 {
         font-family: 'Nunito', sans-serif;
