@@ -1,7 +1,7 @@
 <template>
-    <div class="content">
+    <div class="content" data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" data-sal-easing="ease-out-bounce">
         <div class="Section">
-            <h2 class="Section__title">{{ title }}</h2>
+            <h2 class="Section__title" data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" data-sal-easing="ease-out-bounce">{{ title }}</h2>
             <div class="Section__content">
                 <slot></slot>
             </div>
@@ -10,12 +10,18 @@
 </template>
 
 <script>
+    import sal from 'sal.js';
+
     export default {
-        props: ['title']
+        props: ['title'],
+        mounted () {
+            this.$nextTick(() => sal());
+        }
     }
 </script>
 
 <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
     .Section {
         position: relative;
@@ -25,13 +31,22 @@
 
     .Section__title {
         width: 30%;
-        padding-top: 3.125rem;
+        padding-top: 0.25rem;
+            font-size: 5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: RGBA(49,79,64,0.15);
+
     }
 
     .Section__content {
         width: 65%;
         margin-top: 3.665rem;
 
+    }
+
+    .content{
+        margin-top: -3.5rem;
     }
 
     @media (max-width: 667px) {

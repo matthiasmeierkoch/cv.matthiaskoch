@@ -23,6 +23,7 @@ export default {
   ** Global CSS
   */
     css: [
+      './node_modules/sal.js/dist/sal.css'
     ],
     /*
     ** Plugins to load before mounting the App

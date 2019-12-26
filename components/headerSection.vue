@@ -1,25 +1,23 @@
 <template>
     <div class="headerSection">
-        <div class="nav">
-            <h2 class="name">Matthias Koch</h2>
-            <h2 class="path"> / Crriculum Vitae</h2>
-        </div>
-
-        <h1 class="title">Curriculum Vitae</h1>
-        <div class="section">
-            <span class="hscroll-line"></span>
-        </div>
+        <h1 class="title" data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" data-sal-easing="ease-out-bounce">Curriculum Vitae</h1>
+        <h2 class="titlelead" data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" data-sal-easing="ease-out-bounce">My name is Matthias Koch, I am a 23 years old Interaction Designer, currently working <a href="https://www.swisscom.com" target="_blank">@ Swisscom</a><br> to help building better digital products.</h2>
     </div>
 </template>
 
 <script>
+    import sal from 'sal.js';
 
-    export default {}
+    export default {
+        mounted () {
+            this.$nextTick(() => sal());
+        }
+    }
 
 </script>
 
 <style>
-    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
     .headerSection {
         width: 100vw;
@@ -27,111 +25,36 @@
         background-color: #0E0E0E;
     }
 
-    .nav {
-        display: flex;
-    }
-
-    .name {
-        padding-top: 4rem;
-        padding-left: 2rem;
-        color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.25rem;
-        font-weight: 300;
-    }
-
-    .path {
-        padding-top: 4rem;
-        margin-left: 0.5rem;
-        color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.25rem;
-        font-weight: 700;
-    }
-
     .title {
-        width: 100%;
-        padding-top: 35vh;
+        max-width: 43rem;
+        padding: 2rem;
+        padding-top: 18rem;
+        padding-bottom: 0rem;
         margin: auto;
-        text-align: center;
+        text-align: left;
         font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
         font-size: 3.5rem;
         background: -webkit-linear-gradient(45deg, #E859FF, #FFBA2E);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 
-    .section {
-        width: 80%;
-        margin: 0 auto;
-        height: 400px;
-        position: relative;
-        padding: 0;
-        display: flex;
-        justify-content: center;
+    .titlelead{
+        max-width: 43rem;
+        margin: auto;
+        padding: 2rem;
+        text-align: left;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+        color: #ffffff;
+        font-size: 1.5rem;
     }
 
-    .hscroll-line {
-        bottom: 30px;
-        right: 50%;
-        height: 1px;
-        position: absolute;
-        overflow: hidden;
-        width: 60px;
-        transform: rotate(90deg);
-        tranform-origin: 50% 50%;
-
-    }
-
-    .hscroll-line::before,
-    .hscroll-line::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        content: ""
-    }
-
-    .hscroll-line:before {
-        background: #ffffff3b;
-    }
-
-    .hscroll-line::after {
+    a{
         background: -webkit-linear-gradient(45deg, #E859FF, #FFBA2E);
-        animation: move 3s infinite
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-
-    @keyframes move {
-        0% {
-            transform: translate3d(-200%, 0, 0)
-        }
-        60% {
-            transform: translate3d(100%, 0, 0)
-        }
-        100% {
-            transform: translate3d(100%, 0, 0)
-        }
-    }
-
-    @media (max-width: 667px) {
-        .name {
-            font-size: 0.9rem;
-        }
-
-        .path {
-            font-size: 0.9rem
-        }
-
-        .title {
-            font-size: 3rem;
-            padding-top: 45%;
-        }
-
-        .section {
-            padding-top: 30%;
-        }
-    }
-
 
 </style>
