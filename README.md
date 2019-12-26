@@ -1,6 +1,5 @@
 # curriculum_vitae
 
-> My kryptonian Nuxt.js project
 
 ## Build Setup
 
