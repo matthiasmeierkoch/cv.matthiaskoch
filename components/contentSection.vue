@@ -56,6 +56,14 @@
             <p>English: Fluent</p>
         </Section>
 
+        <hr>
+
+        <Section title="Contact">
+            <p><a href="https://www.instagram.com/matthiasmeierkoch/">Instagram</a></p>
+            <p><a href="https://www.linkedin.com/in/matthias-koch-3588ba119/">LinkedIn</a></p>
+            <p><a href="mailto:hello@matthiasko.ch">E-mail</a></p>
+        </Section>
+
         <weekday></weekday>
     </div>
 

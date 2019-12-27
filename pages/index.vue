@@ -38,7 +38,8 @@
         padding-right: 2rem;
         padding-left: 2rem;
         padding-bottom: 2rem;
-        margin-top: 100vh;
+        margin-top: 90vh;
+        border-radius: 20px;
         background-color: white;
     }
 
