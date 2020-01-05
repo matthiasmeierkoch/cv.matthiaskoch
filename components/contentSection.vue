@@ -15,7 +15,7 @@
             <p class="what"><strong>Interaction Designer</strong><br>@ Swisscom ag (2019 - now)
             </p>
 
-            <p class="what"><strong>Interaction Design & Photography </strong><br>@ internezzo ag (2017 - 2019)
+            <p class="what"><strong>Interaction Designer & Photography </strong><br>@ internezzo ag (2017 - 2019)
             </p>
 
             <p class="what"><strong>Event Management Internship & Photography</strong>
@@ -42,8 +42,7 @@
 
         <Section title="competences">
             <p><strong>Design:</strong><br> Sketch, Figma, Adobe XD, Protopie, Adobe Photoshop, Illustrator,
-                InDesign, Premiere Pro,
-                After Effects</p>
+                InDesign, Premiere Pro, After Effects</p>
             <p><strong>Code:</strong><br> Basic HTML, CSS and Javascript</p>
             <p><strong>Tools I like:</strong><br> Jira, Confluence, Slack, Bear</p>
         </Section>
@@ -105,7 +104,7 @@
     }
 
     .sectionContent {
-        max-width: 56.875rem;
+        max-width: 46.875rem;
         margin: 0 auto;
         background: white;
 

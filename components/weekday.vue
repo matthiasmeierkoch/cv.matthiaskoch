@@ -1,5 +1,5 @@
 <template>
-<p>Happy {{weekdayName }}!</p>
+<p>Happy {{weekdayName}}!</p>
 
 </template>
 

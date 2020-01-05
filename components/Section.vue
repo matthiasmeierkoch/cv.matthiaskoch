@@ -27,12 +27,11 @@
 
     .Section {
         position: relative;
-        justify-content: space-between;
-        display: flex;
+
     }
 
     .Section__title {
-        width: 30%;
+        width: 100%;
         padding-top: 0.25rem;
         font-size: 5rem;
         font-family: 'Montserrat', sans-serif;
@@ -42,7 +41,8 @@
     }
 
     .Section__content {
-        width: 65%;
+        width: 100%;
+        max-width: 38rem;
         margin-top: 3.665rem;
 
     }
@@ -59,7 +59,7 @@
 
         .Section__title {
             width: 100%;
-            font-size: 4.5rem;
+            font-size: 3.5rem;
             margin-top: 4rem;
 
         }

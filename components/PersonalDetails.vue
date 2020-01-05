@@ -9,7 +9,6 @@
                      data-sal-easing="ease-out"
                      src="../assets/matthiaskoch.jpg">
             </div>
-
                 <div class="Personal__subtitle" data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000"
                      data-sal-easing="ease-out">
                     <h3>Name:</h3>
@@ -103,8 +102,8 @@
     .portrait {
         position: absolute;
         margin-top: 4.5rem;
-        right: 2rem;
-        width: 37%;
+        right: 0%;
+        max-width: 18rem;
     }
 
     @media (max-width: 667px) {
@@ -112,7 +111,7 @@
         .Personal__title {
             width: 100%;
             margin-top: 1rem;
-            font-size: 4.5rem;
+            font-size: 3.5rem;
             position: absolute;
             line-height: 4rem;
         }
@@ -122,20 +121,22 @@
         }
 
         .Personal__subtitle {
-            width: 100%;
-            margin-top: 40rem;
+            width: 50%;
+            margin-top: 30rem;
         }
 
         .Personal__content {
-            width: 45%;
-            margin-top: 40rem;
+            width: 50%;
+            margin-top: 30rem;
         }
 
         .portrait {
             position: absolute;
+            right: 50%;
             margin-top: 10rem;
             width: 100%;
-            right: 0;
+            left: 0%;
+
         }
     }
 
