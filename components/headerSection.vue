@@ -37,6 +37,7 @@
         width: 100vw;
         height: 100vh;
         background-color: #0E0E0E;
+        overflow-x: hidden;
     }
 
     .title {
