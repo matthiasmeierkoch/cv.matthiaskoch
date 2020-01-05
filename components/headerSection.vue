@@ -72,4 +72,31 @@
         -webkit-text-fill-color: transparent;
     }
 
+    @media (max-width: 667px) {
+
+        .title {
+            width: 100%;
+            padding: 1rem;
+            padding-top: 4rem;
+            padding-bottom: 1rem;
+            margin: auto;
+            text-align: left;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 3.5rem;
+        }
+
+        .titlelead{
+            width: 100%;
+            margin: auto;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 300;
+            font-family: 'Montserrat', sans-serif;
+            color: #ffffff;
+            font-size: 1.5rem;
+        }
+
+    }
+
 </style>

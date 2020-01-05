@@ -149,4 +149,15 @@
         overflow-x: hidden;
     }
 
+    @media (max-width: 667px) {
+
+        .lead {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 300;
+            font-size: 1.625rem;
+            margin: auto;
+            padding-top: 6rem;
+        }
+    }
+
 </style>
