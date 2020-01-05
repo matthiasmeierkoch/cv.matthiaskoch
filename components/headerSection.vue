@@ -6,7 +6,7 @@
             data-sal-duration="1000"
             data-sal-easing="ease-out-bounce">
 
-            Curriculum Vitae</h1>
+            I simplify technology</h1>
 
         <h2 class="titlelead"
             data-sal="slide-up"
@@ -14,7 +14,7 @@
             data-sal-duration="1000"
             data-sal-easing="ease-out-bounce">
 
-            My name is Matthias Koch, I am a 23 years old Interaction Designer, currently working
+            Hi, my name is Matthias Koch, I am a 23 years old Interaction Designer, currently working
             <a href="https://www.swisscom.com" target="_blank">@ Swisscom</a><br> to help building better digital products.</h2>
     </div>
 </template>

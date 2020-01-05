@@ -5,11 +5,14 @@
             Thank you for showing interest in my CV, if you have any Questions, inquiries or would like
             to meet up for a Coffee please do not hesitate to Contact me.
             Cheers, Matthias!</h2>
-        <hr>
+
+        <hr data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" data-sal-easing="ease-out-bounce">
+
         <PersonalDetails title="personal details">
         </PersonalDetails>
 
-        <hr>
+        <hr data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" data-sal-easing="ease-out-bounce">
+
 
         <Section title="experience">
             <p class="what"><strong>Interaction Designer</strong><br>@ Swisscom ag (2019 - now)
@@ -25,7 +28,8 @@
                 <br>@ Foto Studio Kasino ag (2012 - 2015)</p>
         </Section>
 
-        <hr>
+        <hr data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" data-sal-easing="ease-out-bounce">
+
 
         <Section title="education">
             <p class="what"><strong>HF Interaction Design</strong>
@@ -38,7 +42,7 @@
                 <br>@ Medien Form & Farbe (2012 - 2015)</p>
         </Section>
 
-        <hr>
+        <hr data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" data-sal-easing="ease-out-bounce">
 
         <Section title="competences">
             <p><strong>Design:</strong><br> Sketch, Figma, Adobe XD, Protopie, Adobe Photoshop, Illustrator,
@@ -47,7 +51,7 @@
             <p><strong>Tools I like:</strong><br> Jira, Confluence, Slack, Bear</p>
         </Section>
 
-        <hr>
+        <hr data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" data-sal-easing="ease-out-bounce">
 
         <Section title="languages">
             <p>Swiss German: Native</p>
@@ -55,7 +59,7 @@
             <p>English: Fluent</p>
         </Section>
 
-        <hr>
+        <hr data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" data-sal-easing="ease-out-bounce">
 
         <Section title="Contact">
             <p><a href="https://www.instagram.com/matthiasmeierkoch/">Instagram</a></p>
