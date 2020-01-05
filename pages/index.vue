@@ -39,7 +39,7 @@
         padding-left: 2rem;
         padding-bottom: 2rem;
         margin-top: 90vh;
-        border-radius: 20px;
+        border-radius: 1.25rem 1.25rem 0 0 ;
         background-color: white;
     }
 
