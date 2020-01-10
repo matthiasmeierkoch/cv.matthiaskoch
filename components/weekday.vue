@@ -26,5 +26,6 @@
 <style>
 .weekday{
     margin-top: 2rem;
+    margin: 0, auto;
 }
 </style>

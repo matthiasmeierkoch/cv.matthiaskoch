@@ -70,6 +70,7 @@
         background: -webkit-linear-gradient(45deg, #E859FF, #FFBA2E);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        text-decoration: none;
     }
 
     @media (max-width: 667px) {
