@@ -6,7 +6,7 @@
 <script>
     import sal from 'sal.js';
 
-    let dayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const dayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     let day = new Date().getDay();
     let weekdayName = dayName[day];
 
