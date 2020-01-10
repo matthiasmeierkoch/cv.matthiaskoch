@@ -76,7 +76,7 @@
     @media (max-width: 667px) {
 
         .title {
-            width: 100%;
+            width: 90%;
             padding: 1rem;
             padding-top: 4rem;
             padding-bottom: 1rem;
@@ -88,7 +88,7 @@
         }
 
         .titlelead{
-            width: 100%;
+            width: 90%;
             margin: auto;
             padding: 1rem;
             text-align: left;
