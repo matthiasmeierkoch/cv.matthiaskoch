@@ -38,7 +38,7 @@
         padding-right: 2rem;
         padding-left: 2rem;
         padding-bottom: 2rem;
-        margin-top: 90vh;
+        margin: 90vh 5vw 0vw 5vw;
         border-radius: 1.25rem 1.25rem 0 0 ;
         background-color: white;
     }

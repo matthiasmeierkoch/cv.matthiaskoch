@@ -67,7 +67,8 @@
             <p><a href="mailto:hello@matthiasko.ch">E-mail</a></p>
         </Section>
 
-        <weekday></weekday>
+        <hr data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" data-sal-easing="ease-out-bounce">
+        <weekday class="footer"></weekday>
     </div>
 
 
@@ -147,6 +148,10 @@
 
     html {
         overflow-x: hidden;
+    }
+
+    .footer{
+        margin: 0, auto;
     }
 
     @media (max-width: 667px) {

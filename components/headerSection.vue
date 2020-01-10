@@ -15,7 +15,7 @@
             data-sal-easing="ease-out-bounce">
 
             Hi, my name is Matthias Koch, I am a 23 years old Interaction Designer, currently working
-            <a href="https://www.swisscom.com" target="_blank">@&nbsp;Swisscom</a><br> to help building better digital products.</h2>
+            <a href="https://www.swisscom.com" target="_blank">@&nbsp;Swisscom</a> to help building better digital products.</h2>
     </div>
 </template>
 
