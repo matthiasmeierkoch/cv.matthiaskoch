@@ -1,28 +1,30 @@
 <template>
-<p>Happy {{weekdayName}}!</p>
+    <p class="weekday" data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" data-sal-easing="ease-out-bounce">Happy {{ weekday }} !</p>
 
 </template>
 
 <script>
-    let arrayOfWeekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    let dateObj = new Date();
-    let weekdayNumber = dateObj.getDay();
-    let weekdayName = arrayOfWeekdays[weekdayNumber];
+    import sal from 'sal.js';
+
+    let dayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    let day = new Date().getDay();
+    let weekdayName = dayName[day];
 
     export default {
-       async asyncData({$axios}) {
-           let response = await $axios.get("weekdayName");
-           let weekdayName = response.weekdayName;
-
-            return {
-                weekdayName
-            }
+        data() {
+         return { weekday: weekdayName}
         },
+
+        mounted() {
+            this.$nextTick(() => sal());
+        }
     }
 
 </script>
 
 
 <style>
-
+.weekday{
+    margin-top: 2rem;
+}
 </style>

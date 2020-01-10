@@ -51,7 +51,7 @@
     }
 
     html {
-        overflow-x: hidden;
+            overflow-x: hidden;
         background-color: white;
     }
 </style>
