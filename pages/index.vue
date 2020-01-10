@@ -1,13 +1,13 @@
 <template>
     <div class="container">
 
-            <div class="sectionHeader">
-                <headerSection/>
-            </div>
+        <div class="sectionHeader">
+            <headerSection/>
+        </div>
 
-            <div class="contentSection">
-                <contentSection/>
-            </div>
+        <div class="contentSection">
+            <contentSection/>
+        </div>
 
     </div>
 
@@ -32,14 +32,13 @@
 <style>
     @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700&display=swap');
 
-
     .contentSection {
         z-index: 1;
         padding-right: 2rem;
         padding-left: 2rem;
         padding-bottom: 2rem;
-        margin: 90vh 5vw 0vw 5vw;
-        border-radius: 1.25rem 1.25rem 0 0 ;
+        margin: 90vh 5vw 0 5vw;
+        border-radius: 1.25rem 1.25rem 0 0;
         background-color: white;
     }
 
@@ -51,7 +50,13 @@
     }
 
     html {
-            overflow-x: hidden;
+        overflow-x: hidden;
         background-color: white;
+    }
+
+    @media (max-width: 667px) {
+        .contentSection{
+            margin: 70vh 0 0 0;
+        }
     }
 </style>
